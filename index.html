@@ -13,7 +13,8 @@
             <div class="header__wrapper">
                 <div class="header__logo">
                     <a href="./index.html">
-                        <img src="./image/svg/logo.svg" alt="coffee house">
+                      <span class = "header__logo-img"></span>
+                       <span class="header__logo-text">COFFEE HOUSE</span>
                     </a>
                 </div>
                   <div class="header__navigation">
@@ -44,10 +45,11 @@
                           <div class="header__menu-mobile">
                         <a href="./menu.html" class="header__menu-link">
                           <span>Menu</span>
-                        <img src="./image/svg/coffee-cup.svg" alt="">
+                          <span class="header__img"></span>
                     </a>
                 </div>
                 </div>
+
                 <div class="header__actions">
                     <button class="theme-switch"
                     type="button"
@@ -63,12 +65,12 @@
                    </span>
                     </button>
                     <div class="header__menu">
-                        <a href="./menu.html" class="header__menu-link">
-                          <span>Menu</span>
-                        <img src="./image/svg/coffee-cup.svg" alt="">
+                        <a href="./menu.html" class="header__menu-link" aria-current="page">
+                        <span>Menu</span>
+                                <span class="header__img"></span>
                     </a>
                 </div>
-    <button
+            <button
     class="burger"
     type="button"
     aria-label="Open menu"
@@ -78,6 +80,7 @@
     <span class="burger__line"></span>
     <span class="burger__line"></span>
   </button>
+              
                  
                 </div>
             </div>
@@ -112,7 +115,7 @@
                 <button class="favorites__arrow favorites__arrow--prev"
                 type="button"
                  aria-label="Previous coffee"
-                ><img src="./image/svg/left.svg" alt="">
+                ><span class="favorites__left"></span>
             </button>
 
 
@@ -175,7 +178,7 @@
                      <button class="favorites__arrow favorites__arrow--next"
                 type="button"
                  aria-label="Next coffee"
-                ><img src="./image/svg/right.svg" alt=""></button>
+                ><span class="favorites__right"></span></button>
               </div>
                 <div class="favorites__pagination" aria-hidden="true">
     <span class="favorites__indicator favorites__indicator--active"></span>

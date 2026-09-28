@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./menu.css">
-      <link rel="stylesheet" href="./common.css">
 </head>
 <body>
         <header class="header">
@@ -13,7 +13,8 @@
             <div class="header__wrapper">
                 <div class="header__logo">
                     <a href="./index.html">
-                        <img src="./image/svg/logo.svg" alt="coffee house">
+                      <span class = "header__logo-img"></span>
+                       <span class="header__logo-text">COFFEE HOUSE</span>
                     </a>
                 </div>
               <div class="header__navigation">
@@ -44,7 +45,7 @@
                    <div class="header__menu-mobile">
                         <a href="./menu.html" class="header__menu-link"  aria-current="page">
                           <span>Menu</span>
-                        <img src="./image/svg/coffee-cup.svg" alt="">
+                          <span class="header__img"></span>
                     </a>
                 </div>
                 </div>
@@ -64,11 +65,11 @@
                     </button>
                     <div class="header__menu">
                         <a href="./menu.html" class="header__menu-link" aria-current="page">
-                          <span>Menu</span>
-                        <img src="./image/svg/coffee-cup.svg" alt="">
+                        <span>Menu</span>
+                                <span class="header__img"></span>
                     </a>
                 </div>
-                                <button
+            <button
     class="burger"
     type="button"
     aria-label="Open menu"
@@ -104,18 +105,18 @@
                     </button>
                         <button class="menu__category"
                         type="button"
-                         data-category="coffee"
+                         data-category="tea"
                     >
                     <span class="menu__item"><img class="menu__img" src="./image/1.png" alt=""></span>
            
      <span class="menu__category-text">
       Tea
-  
+
                     </button>
                           </button>
                         <button class="menu__category"
                         type="button"
-                         data-category="coffee"
+                         data-category="dessert"
                     >
                     <span class="menu__item"><img class="menu__img" src="./image/2.png" alt=""></span>
            
@@ -125,7 +126,7 @@
                     </button>
                 </div>
   <div class="menu__grid">
-<article class="product-card">
+
   <button
     class="product-card__button"
     type="button"
@@ -356,7 +357,7 @@
 
     
   </button>
-</article>
+</article> -->
 </div>
 <button
   class="menu__load-more"
@@ -518,6 +519,11 @@
       <div class="modal__total">
         <span class="modal__total-label">Total:</span>
         <span class="modal__price"></span>
+      </div>
+
+      <div class="modal__subscribe">
+        The cost is not final. Download our mobile app to see the final price and place your order. 
+        Earn loyalty points and enjoy your favorite coffee with up to 20% discount.
       </div>
 
       <button class="modal__close" type="button">

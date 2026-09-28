@@ -1,9 +1,6 @@
 
-
-
 const burger = document.querySelector('.burger');
-const navigation =
-  document.querySelector('.header__navigation');
+const navigation = document.querySelector('.header__navigation');
 
 burger.addEventListener('click', () => {
   const isOpen =
@@ -26,14 +23,54 @@ document.documentElement.classList.toggle('no-scroll', isOpen);
 });
 
 
-const loadMoreBtn = document.querySelector('.menu__load-more');
 
-const grid = document.querySelector('.menu__grid');
+const themeSwitch = document.querySelector('.theme-switch')
 
-loadMoreBtn.addEventListener('click', () => {
-  grid.classList.add('menu__grid--expanded');
+console.log(11111)
+const root =
+  document.documentElement;
 
-  loadMoreBtn.classList.add(
-    'menu__load-more--hidden'
-  );
+const savedTheme =
+  localStorage.getItem('theme');
+
+const currentTheme =
+  savedTheme || 'light';
+
+setTheme(currentTheme);
+
+themeSwitch.addEventListener('click', () => {
+  console.log(themeSwitch)
+  const currentTheme =
+    root.dataset.theme;
+
+  const nextTheme =
+    currentTheme === 'light'
+      ? 'dark'
+      : 'light';
+
+  setTheme(nextTheme);
 });
+
+function setTheme(theme) {
+  root.dataset.theme = theme;
+
+  localStorage.setItem(
+    'theme',
+    theme
+  );
+
+  const isDark =
+    theme === 'dark';
+
+  themeSwitch.setAttribute(
+    'aria-checked',
+    String(isDark)
+  );
+
+  themeSwitch.setAttribute(
+    'aria-label',
+    isDark
+      ? 'Switch to the light theme'
+      : 'Switch to the dark theme'
+  );
+}
