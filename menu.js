@@ -511,12 +511,12 @@ gridProducts.addEventListener('click', (event) => {
   if (!card) {
     return;
   }
-console.log(card)
+
   const index = Number(card.dataset.index);
-  console.log(index)
+
 
   const product = data[currentCategory][index];
-  console.log(product)
+  
   openModal(product);
 });
 

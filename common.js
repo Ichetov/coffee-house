@@ -26,7 +26,6 @@ document.documentElement.classList.toggle('no-scroll', isOpen);
 
 const themeSwitch = document.querySelector('.theme-switch')
 
-console.log(11111)
 const root =
   document.documentElement;
 
@@ -39,7 +38,7 @@ const currentTheme =
 setTheme(currentTheme);
 
 themeSwitch.addEventListener('click', () => {
-  console.log(themeSwitch)
+
   const currentTheme =
     root.dataset.theme;
 

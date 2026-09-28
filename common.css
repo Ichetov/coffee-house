@@ -212,7 +212,7 @@ background-color: #B0907A;
   mask-position: center;
   mask-size: contain;
 
-  -webkit-mask-image: url('../image/svg/Moon.svg');
+  -webkit-mask-image: url('./image/svg/Moon.svg');
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;

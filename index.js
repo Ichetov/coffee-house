@@ -27,7 +27,7 @@ nextButton.addEventListener('click', () => {
     currentIndex = 0;
   }
 
-  console.log(currentIndex);
+
 
   updateSlider();
 });
@@ -39,7 +39,7 @@ prevButton.addEventListener('click', () => {
     currentIndex = slides.length - 1;
   }
 
- console.log(currentIndex)
+
 
   updateSlider();
 });
