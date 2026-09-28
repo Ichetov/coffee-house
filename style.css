@@ -43,7 +43,7 @@
     display: flex;
     gap: 8px;
     border-radius: 100px;
-    background-color: #E1D4C9;
+    background-color: var(--background-tabs-active);
     padding: 20px 78px;
 }
 
@@ -55,7 +55,7 @@
     font-weight: 600;
     font-size: 60px;
     font-style: italic;
-    color: #403F3D;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -131,7 +131,7 @@
 .favorites__indicator{
     width: 40px;
     height: 4px;
-    background-color: #C1B6AD;
+    background-color: var(--favorites-bg);
     border-radius: 100px;
 }
 
@@ -147,7 +147,7 @@
 }
 
 .favorites__indicator--active {
-  background-color: #665f55;
+  background-color: var(--favorites-active)
 }
 
 
@@ -158,7 +158,7 @@
 
 .about__title{
     font-weight: 600;
-    color: #403F3D;
+    color: var(--text-color);
     font-size: 60px;
     margin-bottom: 40px;
 }
@@ -221,6 +221,7 @@
     font-weight: 600;
     font-size: 60px;
     margin-bottom: 40px;
+    color: var(--text-color);
 }
 
 .mobile__world{
@@ -230,7 +231,7 @@
 
 .mobile__text{
     max-width: 560px;
-    color: #403F3D;
+    color: var(--text-color);
     margin-top: 144px;
 }
 
@@ -253,7 +254,7 @@
 
 .links__store{
     display: flex;;
-    border: 1px solid #665F55;
+    border: 1px solid var(--text-color);
     border-radius: 100px;
     font-weight: 600;
     align-items: center;
@@ -267,6 +268,7 @@
      display: flex;
      flex-wrap: wrap;
     margin-left: 8px;
+    color: var(--text-color)
 }
 
 .links__caption{
@@ -280,12 +282,42 @@
     line-height: 150%;
 }
 
+.favorites__left{
+      width: 18px;
+  height: 18px;
+   background-color: var(--text-color);
+  mask-image: url('./image/svg/left.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  -webkit-mask-image: url('./image/svg/left.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.favorites__right{
+      width: 18px;
+  height: 18px;
+   background-color: var(--text-color);
+  mask-image: url('./image/svg/right.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  -webkit-mask-image: url('./image/svg/right.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
 .links__icon {
   display: block;
   width: 36px;
   height: 36px;
 
-  background-color: currentColor;
+  background-color: var(--text-color);
 
   mask-repeat: no-repeat;
   mask-position: center;
@@ -400,5 +432,5 @@
     flex-direction: column;
   }
 
-  
+
 }
